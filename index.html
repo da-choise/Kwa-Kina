@@ -519,7 +519,7 @@
                                 <div class="flex items-center gap-3">
                                     <button onclick="updateQty('engine', -1)" class="w-8 h-8 rounded-lg bg-plum-light hover:bg-plum-border text-white font-bold flex items-center justify-center transition">-</button>
                                     <span id="qty-engine" class="w-6 text-center font-bold text-amberGold">0</span>
-                                    <button onclick="updateQty('engine', 1)" class="w-8 h-8 rounded-lg bg-amberGold hover:bg-amberGold-dark text-plum-dark font-bold flex items-center justify-center transition">+</button>
+                                    <button onclick="updateQty('engine', 1)" class="w-8 h-8 rounded-lg bg-jade hover:bg-jade-dark text-plum-dark font-bold flex items-center justify-center transition">+</button>
                                 </div>
                             </div>
                         </div>
@@ -780,7 +780,8 @@
             mattress: { name: 'King/Queen Mattress', price: 1800 },
             sedan: { name: 'Sedan Interior Detail', price: 2500 },
             suv: { name: 'SUV / 4x4 Interior Detail', price: 3500 },
-            carpet: { name: 'Carpet Wash (sq. meter)', price: 300 }
+            carpet: { name: 'Carpet Wash (sq. meter)', price: 300 },
+            engine: { name: 'Engine Steam Detailing', price: 2000 }
         };
 
         const quantities = {
@@ -790,7 +791,8 @@
             mattress: 0,
             sedan: 0,
             suv: 0,
-            carpet: 0
+            carpet: 0,
+            engine: 0
         };
 
         function updateQty(key, change) {
