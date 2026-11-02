@@ -510,6 +510,18 @@
                                     <button onclick="updateQty('suv', 1)" class="w-8 h-8 rounded-lg bg-jade hover:bg-jade-dark text-plum-dark font-bold flex items-center justify-center transition">+</button>
                                 </div>
                             </div>
+                            <!-- Engine Wash / Steam Detailing Card -->
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-plum p-4 rounded-2xl border border-plum-border">
+                                <div>
+                                    <span class="font-semibold text-white block">Engine Steam Wash &amp; Degreasing</span>
+                                    <span class="text-xs text-gray-400">Low-moisture dry steam oil/grime removal • KES 2,000</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <button onclick="updateQty('engine', -1)" class="w-8 h-8 rounded-lg bg-plum-light hover:bg-plum-border text-white font-bold flex items-center justify-center transition">-</button>
+                                    <span id="qty-engine" class="w-6 text-center font-bold text-amberGold">0</span>
+                                    <button onclick="updateQty('engine', 1)" class="w-8 h-8 rounded-lg bg-amberGold hover:bg-amberGold-dark text-plum-dark font-bold flex items-center justify-center transition">+</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
