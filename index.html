@@ -443,9 +443,9 @@
                                     <span class="text-xs text-gray-400">KES 600 per Seat</span>
                                 </div>
                                 <div class="flex items-center gap-3">
-                                    <button onclick="updateQty('Customset', -1)" class="w-8 h-8 rounded-lg bg-plum-light hover:bg-plum-border text-white font-bold flex items-center justify-center transition">-</button>
+                                    <button onclick="updateQty('customset', -1)" class="w-8 h-8 rounded-lg bg-plum-light hover:bg-plum-border text-white font-bold flex items-center justify-center transition">-</button>
                                     <span id="qty-dining" class="w-6 text-center font-bold text-amberGold">0</span>
-                                    <button onclick="updateQty('Customset', 1)" class="w-8 h-8 rounded-lg bg-amberGold hover:bg-amberGold-dark text-plum-dark font-bold flex items-center justify-center transition">+</button>
+                                    <button onclick="updateQty('customset', 1)" class="w-8 h-8 rounded-lg bg-amberGold hover:bg-amberGold-dark text-plum-dark font-bold flex items-center justify-center transition">+</button>
                                 </div>
                             </div>
                             <!-- Dining Chairs -->
@@ -788,13 +788,14 @@
         const prices = {
             couch7: { name: '7-Seater Sofa Set', price: 4000 },
             couch5: { name: '5-Seater Sofa Set', price: 3000 },
+            customset: {name: 'Custom Sofa Set', Price: 600},
             dining: { name: 'Dining Chair Pad', price: 300 },
             mattress: { name: 'King/Queen Mattress', price: 1800 },
             sedan: { name: 'Sedan Interior Detail', price: 2500 },
             suv: { name: 'SUV / 4x4 Interior Detail', price: 3500 },
             carpet: { name: 'Carpet Wash (sq. meter)', price: 300 },
-            engine: { name: 'Engine Steam Detailing', price: 2000 },
-            customset: {name: 'Custom Sofa Set', Price: 600}
+            engine: { name: 'Engine Steam Detailing', price: 2000 }
+            
         };
 
         const quantities = {
