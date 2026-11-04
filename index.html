@@ -436,6 +436,18 @@
                                     <button onclick="updateQty('couch5', 1)" class="w-8 h-8 rounded-lg bg-amberGold hover:bg-amberGold-dark text-plum-dark font-bold flex items-center justify-center transition">+</button>
                                 </div>
                             </div>
+                            <!-- Custom set -->
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-plum p-4 rounded-2xl border border-plum-border">
+                                <div>
+                                    <span class="font-semibold text-white block"> Custom Sofa set</span>
+                                    <span class="text-xs text-gray-400">KES 600 per Seat</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <button onclick="updateQty('Customset', -1)" class="w-8 h-8 rounded-lg bg-plum-light hover:bg-plum-border text-white font-bold flex items-center justify-center transition">-</button>
+                                    <span id="qty-dining" class="w-6 text-center font-bold text-amberGold">0</span>
+                                    <button onclick="updateQty('Customset', 1)" class="w-8 h-8 rounded-lg bg-amberGold hover:bg-amberGold-dark text-plum-dark font-bold flex items-center justify-center transition">+</button>
+                                </div>
+                            </div>
                             <!-- Dining Chairs -->
                             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-plum p-4 rounded-2xl border border-plum-border">
                                 <div>
@@ -781,7 +793,8 @@
             sedan: { name: 'Sedan Interior Detail', price: 2500 },
             suv: { name: 'SUV / 4x4 Interior Detail', price: 3500 },
             carpet: { name: 'Carpet Wash (sq. meter)', price: 300 },
-            engine: { name: 'Engine Steam Detailing', price: 2000 }
+            engine: { name: 'Engine Steam Detailing', price: 2000 },
+            customset: {name: 'Custom Sofa Set', Price: 600}
         };
 
         const quantities = {
@@ -792,7 +805,8 @@
             sedan: 0,
             suv: 0,
             carpet: 0,
-            engine: 0
+            engine: 0,
+            Customset:0
         };
 
         function updateQty(key, change) {
