@@ -436,6 +436,18 @@
                                     <button onclick="updateQty('couch5', 1)" class="w-8 h-8 rounded-lg bg-amberGold hover:bg-amberGold-dark text-plum-dark font-bold flex items-center justify-center transition">+</button>
                                 </div>
                             </div>
+                            <!-- Custom set -->
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-plum p-4 rounded-2xl border border-plum-border">
+                                <div>
+                                    <span class="font-semibold text-white block">Custom Sofa Set </span>
+                                    <span class="text-xs text-gray-400"> Per Seat &amp; steam sanitization • KES 300</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <button onclick="updateQty('customset', -1)" class="w-8 h-8 rounded-lg bg-plum-light hover:bg-plum-border text-white font-bold flex items-center justify-center transition">-</button>
+                                    <span id="qty-customset" class="w-6 text-center font-bold text-amberGold">0</span>
+                                    <button onclick="updateQty('customset', 1)" class="w-8 h-8 rounded-lg bg-amberGold hover:bg-amberGold-dark text-plum-dark font-bold flex items-center justify-center transition">+</button>
+                                </div>
+                            </div>
                             <!-- Dining Chairs -->
                             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-plum p-4 rounded-2xl border border-plum-border">
                                 <div>
@@ -448,18 +460,7 @@
                                     <button onclick="updateQty('dining', 1)" class="w-8 h-8 rounded-lg bg-amberGold hover:bg-amberGold-dark text-plum-dark font-bold flex items-center justify-center transition">+</button>
                                 </div>
                             </div>
-                            <!-- Custom set -->
-                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-plum p-4 rounded-2xl border border-plum-border">
-                                <div>
-                                    <span class="font-semibold text-white block"> Custom Sofa set</span>
-                                    <span class="text-xs text-gray-400">KES 600 per Seat</span>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <button onclick="updateQty('customset', -1)" class="w-8 h-8 rounded-lg bg-plum-light hover:bg-plum-border text-white font-bold flex items-center justify-center transition">-</button>
-                                    <span id="qty-dining" class="w-6 text-center font-bold text-amberGold">0</span>
-                                    <button onclick="updateQty('customset', 1)" class="w-8 h-8 rounded-lg bg-amberGold hover:bg-amberGold-dark text-plum-dark font-bold flex items-center justify-center transition">+</button>
-                                </div>
-                            </div>
+
                             <!-- Mattress -->
                             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-plum p-4 rounded-2xl border border-plum-border">
                                 <div>
